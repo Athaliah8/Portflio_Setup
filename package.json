@@ -1,0 +1,23 @@
+{
+  "name": "portflio_setup",
+  "version": "1.0.0",
+  "description": "Microverse project- portflio setup and mobile first",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Athaliah8/Portflio_Setup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Athaliah8/Portflio_Setup/issues"
+  },
+  "homepage": "https://github.com/Athaliah8/Portflio_Setup#readme",
+  "keywords": [],
+  "devDependencies": {
+    "hint": "^7.1.3"
+  }
+}
