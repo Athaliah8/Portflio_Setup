@@ -1,131 +1,42 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Athaliah Tauro's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100;1,600&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      font-size: 16px;
-      line-height: 24px;
-    }
-
-    .container {
-      max-width: 100vw;
-      margin: auto;
-      background-color: white;
-      height: 50vh;
-      color: #344563;
-      border-radius: 10px;
-    }
-
-    .topnav {
-      overflow: hidden;
-      background-color: lightblue;
-      position: relative;
-    }
-
-    .topnav #myLinks {
-      display: none;
-    }
-
-    .topnav a {
-      color: white,
-        padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-      display: block;
-    }
-
-    .topnav a.icon {
-      background: white;
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-
-    .topnav a:hover {
-      background-color: white;
-      color: #344563;
-    }
-
-    .active {
-      background-color: white;
-      color: white;
-    }
-  </style>
-</head>
-
-<body>
-
-
-  <div class="container">
-
-    <!-- Top Navigation Menu -->
-    <div class="topnav">
-      <a href="#home" class="active"><img src="./Images/logo.svg"></a>
-      <div id="myLinks">
-        <a href="#portflio">Portflio</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    <section id="Main-content">
-      <section id="mainImage"> </section>
-
-      <div style="padding-left:30px">
-        <h3>I’m Athaliah
-          Glad to see you! </h3>
-        <p> I’m a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience!
-          If you like what you see and have a project you need coded, don’t hestiate to contact me..</p>
-
-        <footer>
-          <h4>LET'S CONNECT</h4>
-          <div id="socials">
-            <ul>
-              <li class="handel"><a href="https://twitter.com/AthaliahLi" target="_blank"><img
-                    src="./Images/twitter.svg" alt="twitter link"></a></li>
-              <li class="handel"><a href="https://www.linkedin.com/in/athaliah-li-56217324a/" target="_blank"><img
-                    src="./Images/Linkedin icon.svg" alt="linkden link"></a></li>
-              <li class="handel"><a href="https://github.com/Athaliah8" target="_blank"><img src="./Images/github.svg"
-                    alt="github link"></a></li>
-
-            </ul>
-          </div>
-        </footer>
-
-    </section>
-  
-    <section id="my_work"></section>
-
-
-  </div>
-
-
-  </div>
-
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-  </script>
-
-</body>
-
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Athaliah's Portflio </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100;1,600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+          <nav id="nav">
+            <a class="logo" href="#">My Logo</a>
+            
+            <nav><img src="./Images/Union.svg" alt="Menu"></nav>
+               
+          </nav>
+        </header>
+        <section id="Main_Content">
+           <h1>I’m Athaliah<br>
+            Glad to see you!</h1>
+            <p>
+                I’m a software developer! I can help you build a product , 
+                feature or website Look through some of my work and experience! 
+                If you like what you see and have a project you need coded, don’t hestiate to contact me.
+            </p>
+            <footer>
+                <h3>LET'S CONNECT</h3>
+                <div id="socials">
+                   <ul>
+                     <li class="handel"><a href="https://twitter.com/AthaliahLi"><img src="./Images/twitter.svg" alt="twitter link"></a></li>
+                     <li class="handel"><a href="https://www.linkedin.com/in/athaliah-li-56217324a/"><img src="./Images/Linkedin icon.svg" alt="linked link"></a></li>
+                     <li class="handel"><a href="#"><img src="./Images/Vector.svg" alt="M"></a> </li>
+                     <li class="handel"><a href="https://github.com/Athaliah8"><img src="./Images/github.svg" alt="github link"></a></li>
+                     <li class="handel"><a href="#"><img src="./Images/angellist.svg" alt="angellist"></a></li>
+                   </ul>
+                  </div>
+            </footer>
+       </body>
 </html>
