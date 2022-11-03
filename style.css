@@ -1,6 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   display: block;
   margin: 8px;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 #nav {
@@ -10,12 +18,12 @@ body {
 }
 
 #nav a {
+  display: flex;
   text-decoration: none;
   font-family: Poppins, sans-serif;
   font-weight: bold;
   font-size: 30px;
-  color: #6070ff;
-  display: flex;
+  color: #414caf;
   align-items: center;
   text-align: center;
   margin-left: 24px;
@@ -32,9 +40,9 @@ body {
   height: 30px;
   display: flex;
   align-items: center;
-}
 
-#Main_Content {
+}
+ .hero {
   background-image:
     url("./Images/Ellipse\ 11.svg"),
     url("/Images/Rectangle\ 4.svg"),
@@ -66,7 +74,7 @@ body {
   height: 600px;
 }
 
-h1 {
+.bio h1 {
   font-family: Poppins, sans-serif;
   font-style: bold;
   font-weight: 700;
@@ -79,7 +87,7 @@ h1 {
   margin: 0 24px;
 }
 
-p {
+.bio {
   font-family: Poppins, sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -88,9 +96,11 @@ p {
   margin: 12px 24px 0 24px;
 }
 
-#Main_Content p {
-  text-decoration-color: #23a3fa;
+.hero p {
+  text-decoration-color: #36a9f7;
   text-decoration-thickness: 2px;
+  font-family: Poppins, sans-serif;
+  font-color: blue;
 }
 
 footer h3 {
@@ -103,7 +113,7 @@ footer h3 {
   margin-left: 24px;
 }
 
-footer h3:hover {
+footer h3{
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-decoration-color: #23a3fa;
@@ -128,7 +138,7 @@ ul {
 
 .handel:hover { background-color: #23a3fa; }
 
-#My_work {
+#more-about {
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
 }
@@ -280,34 +290,7 @@ footer {
   flex-direction: column;
 }
 
-#skills_0 {
-  display: flex;
-  align-items: baseline;
-  justify-content: flex-start;
-  padding-left: 0;
-  margin-left: 16px;
-}
 
-.skills li {
-  background-color: #ebebfe;
-  border-radius: 25%;
-  margin-right: 10px;
-  font-family: Poppins, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  color: #6070ff;
-  padding: 5px 15px;
-  list-style: none;
-}
-
-.skills p:hover {
-  border: 3px solid #18a0fa;
-  text-decoration: underline;
-  text-decoration-color: #18a0fa;
-  text-decoration-thickness: 3px;
-}
 
 .external_link {
   border: 1px solid #396df2;
@@ -396,14 +379,14 @@ footer {
   text-decoration-thickness: 3px;
 }
 
-#about_me {
+#add-info {
   height: 130vh;
   margin: 0 0 0 16px;
   display: flex;
   flex-direction: column;
 }
 
-#about_me h1 {
+#add-info h1 {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -414,10 +397,15 @@ footer {
   align-items: flex-end;
 }
 
-#about_me h1:hover {
+#add-info h1:hover {
   text-decoration: underline;
   text-decoration-color: #18a0fa;
   text-decoration-thickness: 3px;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
 }
 
 #presentation {
@@ -465,6 +453,13 @@ footer {
   margin-right: 12px;
 }
 
+.icon-card {
+
+  border-radius: 7px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
 #my_resume {
   text-decoration: none;
   font-family: Poppins, sans-serif;
@@ -490,6 +485,11 @@ footer {
   display: flex;
   flex-direction: column;
   margin-top: 35px;
+
+
+}
+.skills-wrapper img {
+  padding: 1.25rem;
 }
 
 #languages_skills {
@@ -631,3 +631,77 @@ width:100%;
   text-decoration-thickness: 3px;
 }
 
+.knowledge .kn_1 {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 400;
+  position: relative;
+  padding: 10px 0;
+  color: #000;
+}
+
+
+#my_skills {
+  grid-column: 2 / span 1;
+  margin-top: 156px;
+  margin-left: 0;
+  width: 100%;
+  height: 300px;
+}
+.spec_name { 
+  justify-content: space-between;
+  width: 100%;
+ }
+
+#programmes {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 0;
+}
+
+
+
+.frameworks-skills {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.pro {
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100px;
+  width: 102px;
+  align-items: center;
+}
+
+.pro p{
+  font-family: Poppins, sans-serif ;
+  font-style: normal;
+  font-weight: 500 ;
+  font-size: 15px ;
+  line-height: 20px ;
+  color: #253858 ;
+  margin-left: 15px ;
+  margin-top: 15px ;
+}
+
+#frameworks { justify-content: space-between; }
+
+#l1 hr {
+  background: #dfe1e6;
+  height: 1px;
+}
+#sk { justify-content: space-between; }
+
+.wrap {
+  justify-content: center;
+  width: 50%;
+  height: 25%;
+  margin-bottom: 200px;
+}

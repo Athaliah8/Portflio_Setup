@@ -2,27 +2,28 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title> Athaliah's Portflio </title>
+        <title> Athaliah's Portflio  </title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="./">
+  
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100;1,600&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <header>
+        
+          <!--Navbar-->
           <nav id="nav">
             <a class="logo" href="#">My Logo</a>
             
-            <nav><img src="./Images/Union.svg" alt="Menu"></nav>
+            <nav><img src="./Images/Union.svg" alt="burger-menu"></nav>
                
           </nav>
-        </header>
-        <section id="Main_Content">
-           <h1>I’m Athaliah<br>
+        
+        <section class="hero" id="main-info">
+           <h1 class="bio-intro">I’m Athaliah<br>
             Glad to see you!</h1>
-            <p>
+            <p class="bio-text">
                 I’m a software developer! I can help you build a product , 
                 feature or website Look through some of my work and experience! 
                 If you like what you see and have a project you need coded, don’t hestiate to contact me.
@@ -40,7 +41,7 @@
                   </div>
             </footer>
         </section>
-    <section id="my_work">
+    <section id="more-about">
       <section id="p1">
         <div id="introd_1">
               <img  class="project_image" src="./images/Snapshoot Portfolio.svg" alt="snapshoot image project">
@@ -160,7 +161,7 @@
           
         </section>
         </section>
-        <section id="about_me">
+        <section id="add-info">
             <h1>About<br> Myself</h1>
             <p id="presentation">Hello I’m a software developer! I can help you build a product , 
                 feature or website Look through some of my work and experience!
@@ -177,38 +178,52 @@
               <a id="my_resume" href="#">Get my resume</a> 
             </div>
             <div id="my_skills">
-                <div id="languages_skills"> 
-                    <div id="spec_name">
-                        <p>Languages</p>
-                        <div><img src="./images/Union.png" alt="selected"></div>
+              <div id="languages_skills">
+                <div class="spec_name">
+                    <p>Languages</p>
+                    <div class="show-language">
+                      <img class="hide"  src="./Images/Union.png" alt="selected">
+                      <img class="show" src="./Images/Union.png" alt="select" style="display: none;">
                     </div>
-                    <ul id="programmes">
-                      <li class="pro"> 
-                          <img src="./images/js.svg" alt="JAVASCRIPT"> 
-                          <p>JavaScript</p>
-                      </li>
-                      <li class="pro">
-                          <img src="./images/html.svg" alt="HTML">
-                          <p>HTML</p>
-                      </li>
-                      <li class="pro">
-                          <img src="./images/css.svg" alt="CSS">
-                          <p>CSS</p>
-                      </li>
-                    </ul>
                 </div>
-                <div id="frameworks">
-                    <p>Frameworks</p>
-                  <span><img src="./Images/Union(2).svg" alt="select"></span>
-                </div>
-                <div id="l1"> <hr/></div>
-                <div id="sk">
-                  <p>Skills</p>
-                  <span><img src="./Images/Union(2).svg" alt="select"></span>
-                </div>
-                <div class="ligne" id="l2"> <hr/></div>
+                <ul id="programmes">
+                     <li class="pro">
+                       <img src="./Images/js.svg" alt="javascript image">
+                       <p>JavaScript</p>
+                     </li>
+              
+                     <li class="pro">
+                       <img src="./Images/html.svg" alt="html image">
+                       <p>HTML</p>
+                     </li>
+                     <li class="pro">
+                       <img src="./Images/css.svg" alt="css image">
+                       <p>CSS</p>
+                     </li>
+                </ul>
               </div>
-          </section>
- 
-</body>
-</html>
+              <div>
+                <div> <hr/></div>
+              </div>
+              <div id="frameworks">
+                <div class="spec_name">
+                  <p>Frameworks</p>
+                  <div class="show-frameworks">
+                    <img class="hide"  src="statics/images/fleche_dessous.png" alt="selected" style="display: none;">
+                    <img class="show" src="./Images/Union(2).svg" alt="select">
+                  </div>
+                </div>
+                </div>
+                
+              <div id="l1"> <hr/></div>
+              <div id="sk">
+                <div class="spec_name">
+                 <p>Skills</p>
+                 <div class="show-skills">
+                  <img class="hide"  src="" alt="selected" style="display: none;">
+                  <img class="show" src="./Images/Union(2).svg" alt="select">
+                 </div>
+                </div>
+                 
+              </body>
+              </html>
